@@ -4,3 +4,8 @@
 В разделе [**Галерея Tableau**](https://lets-analyse-it.blogspot.com/p/blog-page_19.html) находится коллекция моих дашбордов. Часть из них интерактивна. Вы можете не уходя со страницы, поиграться с параметрами дашборда и посмотреть, как будут меняться его элементы.
 
 ![lets_pic](/docs/images/blogimage.jpg)
+
+
+А [здесь](https://lets-analyse-it.blogspot.com/p/grafana.html) я добавил примеры моих работ, созданных в BI-системе Grafana
+
+![lets_pic](/docs/images/grafana_board_resize.png)
