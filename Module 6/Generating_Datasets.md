@@ -43,7 +43,7 @@
     -s - для размера данных 10Gb
 
    Если после команды ``dbgen -v -T o -s 10`` вы получили сообщение  
-   ``-bash: dbgen: command not found`` , то делаем следующие манипуляции:
+   ``-bash: dbgen: command not found`` , то делаем следующие манипуляции:  
    -добавляем текущий католог в PATH ``PATH=$HOME/tpch-kit/dbgen``  
    -пробуем еще раз запустить генератор:
    ``dbgen -v -T o -s 10``
@@ -53,14 +53,14 @@
    -идем в рабочий каталог ``cd tpch-kit/dbgen``  
    -создаем папку DEBUG ``mkdir DEBUG``  
    -копируем в неё проблемный файл dists.dss ``cp dists.dss $HOME/tpch-kit/dbgen/DEBUG``    
-   -снова добавляем текущий католог в PATH ``PATH=$HOME/tpch-kit/dbgen`` 
+   -снова добавляем текущий католог в PATH ``PATH=$HOME/tpch-kit/dbgen``  
    -снова запускаем генератор ``dbgen -v -T o -s 10``  
    После этого генерация данных должна начаться
 
 
 8. Переходим в дирикторию с сгенерироваными данными
     
-    ``cd $HOME/ermdata``  
+    ``cd $HOME/emrdata``  
     ``ls``
    
     увидим два созанных файла ``lineitem.tbl orders.tbl``
@@ -82,12 +82,12 @@
     ``export DSS_PATH=$HOME/redshiftdata``    
     ``.dbgen -v -T o -s 40``  
 
-12. Перейдем в дирикторию с новыми данными
+12. Перейдем в директорию с новыми данными
 
     ``cd $HOME/redshiftdata``  
     ``ls -l``
     
-13. Давай поделим ети файлы на более мелкие, ето поможет нам подгрузить данные в s3 хранилище быстрее и является хорошей практикой для работы с redshift. Сначало проверим количество строчек в файле orders.tbl
+13. Давай поделим эти файлы на более мелкие, это поможет нам подгрузить данные в s3 хранилище быстрее и является хорошей практикой для работы с redshift. Сначала проверим количество строчек в файле orders.tbl
 
    ``wc -l orders.tbl``  
      60000000 orders.tbl
@@ -104,16 +104,16 @@
 
 16. На выходе получим
 
-    lineitem.tblbr
-    lineitem.tbl.0000br
-    lineitem.tbl.0001br
-    lineitem.tbl.0002br
-    lineitem.tbl.0003br
-    lineitem.tbl.0004br
-    orders.tblbr
-    orders.tbl.0000br
-    orders.tbl.0001br
-    orders.tbl.0002br
+    lineitem.tbl  
+    lineitem.tbl.0000  
+    lineitem.tbl.0001  
+    lineitem.tbl.0002  
+    lineitem.tbl.0003  
+    lineitem.tbl.0004  
+    orders.tbl  
+    orders.tbl.0000  
+    orders.tbl.0001  
+    orders.tbl.0002  
     orders.tbl.0003
 
 17. Нам уже не нужны файлы lineitem.tbl и orders.tbl
