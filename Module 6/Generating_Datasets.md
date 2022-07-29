@@ -16,7 +16,7 @@
 
 3. Клонируем репозиторий и переходим в склонированую директорию
     
-    ``git clone https://github.com/gregrahn/tpch-kit``
+    ``git clone https://github.com/gregrahn/tpch-kit``  
     ``cd tpch-kit/dbgen``
 
 4. Забускаем билд библиотеки для операционой системы нашего инстанса
@@ -25,7 +25,7 @@
 
 5. Создаем дерикторию для нашых данных 
     
-    ``cd $HOME``
+    ``cd $HOME``  
     ``mkdir emrdata``
 
 6. Пропипеременую окружение для библиотеки генерации данных
@@ -34,24 +34,24 @@
 
 7. Запускаем генерацию  данных
     
-    ``cd tpch-kit/dbgen``
+    ``cd tpch-kit/dbgen``  
     ``dbgen -v -T o -s 10``
 
-    -v - для подробного режима
-    -T - для уточнения наших таблиц
-    o - для 2 таблиц, которые мы создадим
+    -v - для подробного режима  
+    -T - для уточнения наших таблиц  
+    o - для 2 таблиц, которые мы создадим  
     -s - для размера данных 10Gb
 
 8. Переходим в дирикторию с сгенерироваными данными
     
-    ``cd $HOME/ermdata``
+    ``cd $HOME/ermdata``  
     ``ls``
    
     увидим два созанных файла ``lineitem.tbl orders.tbl``
 
 9. Сейчас в s3 создадим bucket чтоб подгрузить туда сгенерированые данные
 
-    ``aws s3api create-bucket --bucket bigdatalabs --region us-east-1``
+    ``aws s3api create-bucket --bucket bigdatalabs --region us-east-1``  
     - имя bucket должно быть уникальным
     - используй такойже регион как и для ec2 инстанса что-б уменшить разходы на сервисы в AWS
 
@@ -61,19 +61,19 @@
 
 11. Давайте создадим датасет для лабараторной для redshift
 
-    ``cd`` - ето еквивалент команды ``cd $HOME``
-    ``mkdir redshiftdata``
-    ``export DSS_PATH=$HOME/redshiftdata``
-    ``.dbgen -v -T o -s 40``
+    ``cd`` - ето еквивалент команды ``cd $HOME``  
+    ``mkdir redshiftdata``  
+    ``export DSS_PATH=$HOME/redshiftdata``    
+    ``.dbgen -v -T o -s 40``  
 
 12. Перейдем в дирикторию с новыми данными
 
-    ``cd $HOME/redshiftdata``
+    ``cd $HOME/redshiftdata``  
     ``ls -l``
     
 13. Давай поделим ети файлы на более мелкие, ето поможет нам подгрузить данные в s3 хранилище быстрее и является хорошей практикой для работы с redshift. Сначало проверим количество строчек в файле orders.tbl
 
-   ``wc -l orders.tbl``
+   ``wc -l orders.tbl``  
      60000000 orders.tbl
 
 14. Давайте разобьем файл на 4 части
@@ -82,8 +82,8 @@
 
 15. так же разобьем файл lineitem.tbl
 
-    ``wc -l lineitem.tbl``
-    ``240012290 lineitem.tbl``
+    ``wc -l lineitem.tbl``  
+    ``240012290 lineitem.tbl``  
     ``split -d -l 60000000 -a 4 lineitem.tbl lineitem.tbl.``
 
 16. На выходе получим
