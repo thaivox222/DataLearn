@@ -23,7 +23,7 @@
     
     ``make MACHINE=LINUX DATABASE=POSTGRESQL``
 
-5. Создаем дерикторию для нашых данных 
+5. Создаем деректорию для наших данных 
     
     ``cd $HOME``  
     ``mkdir emrdata``
