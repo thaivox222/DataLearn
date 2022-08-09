@@ -55,3 +55,16 @@ file_format=CSV;
 
 А это результат отработки одного и того же селекта до и после кэширования  
 ![lets_pic](/docs/images/snw_cashing_speed.jpg) 
+
+Если в этом запросе выдает ошибку, попробуйте увеличить параметр relult_limit c 5 до 15-20  
+```sql
+set query_id =
+(
+    select 
+        query_id 
+    from table(information_schema.query_history_by_session (result_limit=>5))
+    where query_text like 'update%' 
+    order by start_time 
+    limit 1
+);
+```  
