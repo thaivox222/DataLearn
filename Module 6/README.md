@@ -31,7 +31,7 @@ create file format CSV
     FIELD_OPTIONALLY_ENCLOSED_BY = '"'
     -- comment = '<comment>'
 ```  
-У меня же и после прописывания этих параметров продолжили выскакивать эксепшены. Чтобы убрать их я прописал уже в самой команде COPY параметр 'ON_ERROR=CONTINUE':  
+У меня же и после прописывания этих параметров продолжили выскакивать эксепшены. Чтобы убрать их я прописал уже в самой команде COPY параметр 'ON_ERROR=CONTINUE'   
 
 ```sql
 copy into trips from @citibike_trips
@@ -40,18 +40,18 @@ file_format=CSV;
 ```  
 Результаты загрузки тестовых данных на Warehouse size = Small
 
-Скриншот 1
+Скриншот 1  
 ![lets_pic](/docs/images/snw_small_load1.jpg)  
-Скриншот 2
+Скриншот 2  
 ![lets_pic](/docs/images/snw_small_load2.jpg)  
-Скриншот 3
+Скриншот 3  
 ![lets_pic](/docs/images/snw_small_load3.jpg)   
 
 А так отработала загрузка тестовых данных после перехода на  Warehouse size = Large  
 Скриншот 4  
 ![lets_pic](/docs/images/snw_large_load1.jpg)  
-Скриншот 5
+Скриншот 5  
 ![lets_pic](/docs/images/snw_large_load2.jpg) 
 
-А это результат отработки одного и того же селекта до и после кэширования
+А это результат отработки одного и того же селекта до и после кэширования  
 ![lets_pic](/docs/images/snw_cashing_speed.jpg) 
