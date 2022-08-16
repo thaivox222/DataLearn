@@ -71,13 +71,18 @@ set query_id =
 Я записался на этот [курс](https://www.snowflake.com/data-cloud-academy-data-analysts/) от Snowflake Data Academy.  
 
 Курс состоит из серии видео уроков по темам:  
-SNOWFLAKE 101 (вводные уроки по основам Снежинки)  
+
+#####SNOWFLAKE 101 (вводные уроки по основам Снежинки)  
 ![lets_pic](/docs/images/snowflake_cloud_academy-1.jpg)  
-ANALYSIS AND VISUALIZATION BEST PRACTICES  
+
+#####ANALYSIS AND VISUALIZATION BEST PRACTICES  
 ![lets_pic](/docs/images/snowflake_cloud_academy-2.jpg)  
-DATA MANAGEMENT FOR ANALYSTS  
+
+#####DATA MANAGEMENT FOR ANALYSTS  
 ![lets_pic](/docs/images/snowflake_cloud_academy-3.jpg)  
-ADVANCED ANALYTICS AND EMERGING TRENDS  
+
+#####ADVANCED ANALYTICS AND EMERGING TRENDS  
 ![lets_pic](/docs/images/snowflake_cloud_academy-4.jpg)  
+
 
 По факту в этих видео есть парочка воркшопов, а остальные - много  болтавни с примерами юзкейсов. Практических знаний ноль, зато прокачаешься в том как и с чем эту Снежинку готовят.
