@@ -73,15 +73,19 @@ set query_id =
 Курс состоит из серии видео уроков по темам:  
 
 #####SNOWFLAKE 101 (вводные уроки по основам Снежинки)  
+
 ![lets_pic](/docs/images/snowflake_cloud_academy-1.jpg)  
 
 #####ANALYSIS AND VISUALIZATION BEST PRACTICES  
+
 ![lets_pic](/docs/images/snowflake_cloud_academy-2.jpg)  
 
 #####DATA MANAGEMENT FOR ANALYSTS  
+
 ![lets_pic](/docs/images/snowflake_cloud_academy-3.jpg)  
 
 #####ADVANCED ANALYTICS AND EMERGING TRENDS  
+
 ![lets_pic](/docs/images/snowflake_cloud_academy-4.jpg)  
 
 
