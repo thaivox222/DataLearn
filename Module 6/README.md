@@ -56,7 +56,7 @@ file_format=CSV;
 А это результат отработки одного и того же селекта до и после кэширования  
 ![lets_pic](/docs/images/snw_cashing_speed.jpg) 
 
-Если в этом запросе выдает ошибку, попробуйте увеличить параметр relult_limit c 5 до 15-20  
+Если в этом запросе выдает ошибку, попробуйте увеличить параметр result_limit c 5 до 15-20  
 ```sql
 set query_id =
 (
@@ -68,3 +68,16 @@ set query_id =
     limit 1
 );
 ```  
+Я записался на этот [курс](https://www.snowflake.com/data-cloud-academy-data-analysts/) от Snowflake Data Academy.  
+
+Курс состоит из серии видео уроков по темам:  
+SNOWFLAKE 101 (вводные уроки по основам Снежинки)  
+![lets_pic](/docs/images/snowflake_cloud_academy-1.jpg)  
+ANALYSIS AND VISUALIZATION BEST PRACTICES  
+![lets_pic](/docs/images/snowflake_cloud_academy-2.jpg)  
+DATA MANAGEMENT FOR ANALYSTS  
+![lets_pic](/docs/images/snowflake_cloud_academy-3.jpg)  
+ADVANCED ANALYTICS AND EMERGING TRENDS  
+![lets_pic](/docs/images/snowflake_cloud_academy-4.jpg)  
+
+По факту в этих видео есть парочка воркшопов, а остальные - много  болтавни с примерами юзкейсов. Практических знаний ноль, зато прокачаешься в том как и с чем эту Снежинку готовят.
