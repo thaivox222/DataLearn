@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: STAGING  # для снежинки это название схемы в бд
+    #schema: #уже прописана выше, поэтому отключена
+    tables:  # здесь просто перечисляем все названия таблиц, которые лежат в стейджинге
+      - name: _AIRBYTE_RAW_JAFFLE_SHOP_CUSTOMERS
+      - name: _AIRBYTE_RAW_JAFFLE_SHOP_ORDERS
+      - name: _AIRBYTE_RAW_JAFFLE_SHOP_STRIPE_PAYMENTS
+
