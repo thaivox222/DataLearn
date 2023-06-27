@@ -7,33 +7,33 @@
 #### Практика 4.3
 Установка Knime на Windows проходит легко, требуется лишь задать путь, в котором будет располагаться рабочий проект и задать размер оперативной памяти, которая будет выделена для операций работы с данными. При обработке больших данных у Knime подключается дисковый кэш.
 
-Окно загрузки Knime AP
+Окно загрузки Knime AP  
 ![lets_pic](/docs/images/Knime_load_screen.jpg)  
   
 
 #### Практика 4.4  
 В качестве отправной точки был взят файл superstore_general.csv из архива исходников Павла Новичкова (ссылка есть в описании лабы)  
 
-Worlflow создания таблицы измерений products_dim  
+Worklflow создания таблицы измерений products_dim:  
 ![lets_pic](/docs/images/products_dim.jpg)  
 
 
-Worlflow создания таблицы измерений clients_dim  
+Worklflow создания таблицы измерений clients_dim:  
 ![lets_pic](/docs/images/clients_dim.jpg)  
 
 
-Worlflow создания таблицы измерений shipping_dim  
+Worklflow создания таблицы измерений shipping_dim:  
 ![lets_pic](/docs/images/shipping_dim.jpg)  
 
 
-Worlflow создания таблицы измерений channels_dim  
+Worklflow создания таблицы измерений channels_dim:   
 ![lets_pic](/docs/images/channels_dim.jpg)  
 
-Так выглядит операция создания таблицы фактов в интерфейсе Knime. Вместо inner join statement используем Joiner-node  
-в линейном графе  
+Так выглядит операция создания таблицы фактов в интерфейсе Knime. Вместо inner join sql-statement используем Joiner ноду
+в линейном графе:  
 ![lets_pic](/docs/images/fact_table.jpg) 
 
-А так выглядит общий Worklflow создания таблиц измерений
+А так выглядит общий Worklflow создания таблиц измерений и таблицы фактов:  
 ![lets_pic](/docs/images/worklflow.jpg) 
 
 
@@ -86,7 +86,7 @@ Tag cloud chart
 
 #### Практика 4.7  
 
-В качестве практики по этой лабе укажу [ссылку](https://github.com/thaivox222/dbt_long) на свой репо, в котором тестировал подходы инкрементальной загрузки в ClickHouse с помощью dbt https://github.com/thaivox222/dbt_long 
+В качестве практики по этой лабе укажу [ссылку](https://github.com/thaivox222/dbt_long) на свой репо, в котором тестировал подходы инкрементальной загрузки в ClickHouse с помощью dbt.   
 Так получилось, что знакомство с dbt у меня состоялось гораздо заранее прохождения 4 модуля DATA LEARN ¯\_(ツ)_/¯
 
 
